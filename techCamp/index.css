@@ -1,9 +1,10 @@
 @media only screen and (max-width: 1200px) {
   body {
     background: linear-gradient(to bottom, #1C1B1A, #4c4b4a);
-    overflow: hidden;
     height: 100%;
     margin: 0;
+    padding: 5px;
+    font-size: 30px;
   }
   .main {
     display: flex;
@@ -21,10 +22,13 @@
     border-radius: 30px;
     gap: 10px;
     padding: 10px;
+    border-bottom: 1px solid brown;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
   .center {
     width: 80px;
-    height: 80px;
+    height: 150px;
+    margin-left: 40%;
   }
   .center img {
     height: 100%;
@@ -66,6 +70,7 @@
     border-radius: 10px;
     height: 50%;
     margin: auto;
+    box-shadow: -10px 10px 10px rgb(0, 0, 0);
   }
   .social img {
     width: 85%;
@@ -76,37 +81,43 @@
     grid-template-columns: 1fr 5% 1fr 5% 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    padding-left: 5px;
+    padding-left: 55px;
+    padding-right: 0;
     color: gold;
+    margin-bottom: auto;
   }
   #aboutUs {
     grid-column: 1/3;
     grid-row: 2/4;
     align-self: center;
-    width: 100%;
     height: auto;
-    z-index: 1;
-    margin-top: 80px;
+    z-index: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    padding: 10px;
+    border-bottom: 3px solid gold;
+    border-left: 3px solid gold;
+    box-shadow: -10px 0 10px rgb(0, 0, 0);
+  }
+  #aboutUs_image {
+    width: 100%;
   }
   #helloWorld {
     grid-column: 2/5;
     grid-row-start: 2;
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
+    border-left: 3px solid aquamarine;
+    box-shadow: -10px 0 10px rgb(0, 0, 0);
   }
   #hello_world_text {
-    z-index: 3;
-    height: 10%;
     background-color: #0a1818;
     text-align: center;
+    color: aquamarine;
+    border-bottom: 3px solid aquamarine;
   }
   #profile {
     grid-column: 4/6;
@@ -120,20 +131,22 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    color: rgb(0, 255, 0);
+    border-left: 3px solid green;
+    border-bottom: 3px solid green;
+    box-shadow: -10px 0 10px rgb(0, 0, 0);
   }
   #profile_image {
-    align-self: flex-end;
     width: 100%;
-    height: auto;
   }
   #links {
-    height: 5%;
-    width: 60%;
-    margin-left: auto;
-    border: 1px hidden black;
+    width: 99%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: start;
+    padding: 20px;
+    opacity: 20%;
   }
   #links a {
     text-decoration: none;
@@ -141,14 +154,85 @@
     font-family: sans-serif;
     border: 1px solid aqua;
     border-radius: 15px;
-    padding: 5px;
+    padding: 20px;
   }
 }
-@media only screen and (max-width: 500px) {
-  @import url(small.scss);
-}
 @media only screen and (min-width: 1200px) {
-  @import url(large.scss);
+  body {
+    background: linear-gradient(to bottom, #1C1B1A, #4c4b4a);
+    overflow: hidden;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 10px;
+  }
+  nav {
+    height: 20%;
+    border: 1px solid blue;
+    display: flex;
+  }
+  nav img {
+    height: 80px;
+    width: 80px;
+  }
+  .content {
+    height: 80%;
+    border: 1px solid orange;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .home {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .social {
+    display: flex;
+    height: 10%;
+    border: 1px solid white;
+    margin-bottom: 0;
+  }
+  #images {
+    height: 80%;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    gap: 10px;
+    height: 90%;
+    color: white;
+  }
+  #links {
+    height: 20%;
+    border: 1px solid green;
+  }
+  .content img {
+    height: 100px;
+    width: 100px;
+  }
+  .social img {
+    height: 40px;
+    width: 40px;
+  }
+  #profile_image {
+    width: 55%;
+    height: auto;
+  }
+  #aboutUs_image {
+    width: 100%;
+    height: auto;
+  }
+  #helloWorld_image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

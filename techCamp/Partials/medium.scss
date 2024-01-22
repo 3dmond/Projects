@@ -1,8 +1,9 @@
 body {
     background: linear-gradient(to bottom, #1C1B1A, #4c4b4a);
-     overflow: hidden;
      height: 100%;
      margin: 0;
+     padding: 5px;
+    font-size: 30px;
 }
 
 .main{
@@ -22,10 +23,14 @@ nav {
     border-radius: 30px;
     gap: 10px;
     padding: 10px;
+    border-bottom: 1px solid brown;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
+
 .center {
     width: 80px;
-    height: 80px; 
+    height: 150px; 
+    margin-left: 40%;
 }
 .center img{
     height: 100%;
@@ -70,6 +75,7 @@ nav {
     border-radius: 10px;
     height: 50%;
     margin: auto;
+    box-shadow: -10px 10px  10px rgba(0, 0, 0, 2);
 }
 
 .social img {
@@ -85,40 +91,46 @@ nav {
     grid-template-columns: 1fr 5% 1fr 5% 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    padding-left: 5px;
+    padding-left: 55px;
+    padding-right: 0;
     color: gold;
+    margin-bottom: auto;
 }
 
 #aboutUs {
     grid-column: 1 / 3;
     grid-row: 2 / 4;
     align-self: center;
-    width: 100%;
     height: auto;
-    z-index: 1;
-    margin-top: 80px;
+    z-index: 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    padding: 10px;
+    border-bottom: 3px solid gold;
+    border-left: 3px solid gold;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 2);
+}
+#aboutUs_image{
+    width: 100%;
 }
 
 #helloWorld {
     grid-column: 2 / 5;
     grid-row-start: 2;
-    width: 100%;
-    height: 100%;
-    margin: auto 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
+    border-left: 3px solid aquamarine;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 2);
 }
 
 #hello_world_text {
-    z-index: 3;
-    height: 10%;
     background-color: #0a1818;
     text-align: center;
+    color: aquamarine;
+    border-bottom: 3px solid aquamarine;
 }
 
 #profile {
@@ -133,23 +145,25 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     background-color: black;
+    color: rgb(0, 255, 0);
+    border-left: 3px solid green;
+    border-bottom: 3px solid green;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 2);
 }
 
 #profile_image {
-    align-self: flex-end;
     width: 100%;
-    height: auto;
 }
 
 
 #links {
-    height: 5%;
-    width: 60%;
-    margin-left: auto;
-    border: 1px hidden black;
+    width: 99%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: start;
+    padding: 20px;
+    opacity: 20%;
 }
 
 #links a {
@@ -158,6 +172,6 @@ nav {
     font-family: sans-serif;
     border: 1px solid aqua;
     border-radius: 15px;
-    padding: 5px;
+    padding: 20px;
 
 }

@@ -3,8 +3,8 @@
     @import 'medium.scss';
 }
 @media only screen and (max-width: 500px){
-    @import url(small.scss);
+    @import 'small.scss';
 }
 @media only screen and (min-width: 1200px){
-    @import url(large.scss);
+    @import 'large.scss';
 }
